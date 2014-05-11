@@ -15,7 +15,7 @@ public class Main {
         for(int i = 0; i <alphabet.length; i++) {
             map.put(i + 1, String.valueOf(alphabet[i]));
         }
-        //System.out.println(map.toString());
+        // System.out.println(map.toString());
         String output = "";
         Scanner sc = new Scanner(System.in);
         char[] input = sc.next().toLowerCase().toCharArray();
@@ -28,7 +28,7 @@ public class Main {
     
     public static String convert(String letter) {
         int val = new String(alphabet).indexOf(letter) + 1;
-        //System.out.println("Letter value:" + val);
+        // System.out.println("Letter value:" + val);
         // A-E : Multiply letter value by 2
         if(val <= 5) {
             return map.get(val + val * 2);
@@ -77,7 +77,7 @@ public class Main {
                 letterVal++;
             }
             jumpAheadBy--;
-            //System.out.println("Jump: " + jumpAheadBy + "Letter val: " + letterVal);
+            // System.out.println("Jump: " + jumpAheadBy + "Letter val: " + letterVal);
         }
         return letterVal;
     }
