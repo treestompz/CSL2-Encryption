@@ -47,7 +47,7 @@ public class Main {
             // 17 -> 1 + 7 = 8 * 10 = answer
             char[] dos = String.valueOf(val).toCharArray();
             int sum = Integer.parseInt(String.valueOf(dos[0])) + Integer.parseInt(String.valueOf(dos[1]));
-            //System.out.println("Sum: " +sum);
+            // System.out.println("Sum: " +sum);
             int newVal = getNewVal(val, sum * 10);
             return map.get(newVal);
         }
